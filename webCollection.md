@@ -52,3 +52,6 @@ vmlinuz.efi
 
 # markdown
 https://blog.csdn.net/qq_42446456/article/details/80690340
+
+# oracle
+OracleDBConsoleorcl

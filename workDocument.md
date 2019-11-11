@@ -1,15 +1,5 @@
 # workDocument
 
-# 年月日
-# 危险源-应急资源
-# 危险源-应急资源 数据重复
-# 危险源-相关预案 数据重复
-# 危险源-关联危化品 数据重复
-
-# 预案-事故类别
-# 预案-安全人员
-# 预案-指令图标
-
 
 # Rap地址
 http://10.30.20.200:8081/workspace/myWorkspace.do
@@ -57,7 +47,7 @@ zs
 C:\bap\MisServer\MsLogs\sesWssORMs\MS-Manage.log
 
 # bap Bug
-http://192.168.90.104:8080/zentao/project-bug-51.html
+http://192.168.90.17:90/zentao/bug-view-4835.html
 liwei
 a_11111111
 ludunyue

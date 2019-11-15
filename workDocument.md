@@ -1,57 +1,17 @@
 # workDocument
 
-
-# Rap地址
-http://10.30.20.200:8081/workspace/myWorkspace.do
-
-# 神道地址
-http://10.30.20.206:9888/zentao
-
-# bap资料整理
-ftp://192.168.90.8/BAP/5.00/
-账号  bap  
-密码  Supcon1304
-
 # 164 orcl 数据库连接信息
 192.168.95.162
 orcl
-lw10
-supcon
-
-system
-supcon
+lw10/supcon
+system/supcon
 
 # 164 服务器密码
 192.168.95.164
 mes!2013
 
-# 32平台
-http://10.30.21.32:8080
-operator
-1
-
-# bap前端开发文档
-http://192.168.90.164:8242/ui-doc/
-
-# bap后台Api
-http://192.168.90.164:8242/sosoapi-web/auth/apidoc/preview.htm?docId=3        
-admin@supcon.com
-123456
-
-# 工作流平台
-http://192.168.95.161:8080
-zs
-0
-
 # 报错日志路径
 C:\bap\MisServer\MsLogs\sesWssORMs\MS-Manage.log
-
-# bap Bug
-http://192.168.90.17:90/zentao/bug-view-4835.html
-liwei
-a_11111111
-ludunyue
-a_11111111
 
 # 代码目录
 \\192.168.95.165\VxBAP\bap-server\bap-workspace\generate

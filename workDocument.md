@@ -79,3 +79,6 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12100 -jar
 
 # 计划项目
 java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12100 -jar C:\bap\bap-server\bap-workspace\generate\sesWssPlanWs\target\sesWssPlanWs-1.0.0.jar
+
+# 部门职责
+java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12100 -jar C:\bap\bap-server\bap-workspace\generate\sesWssORMs\target\sesWssORMs-1.0.0.jar

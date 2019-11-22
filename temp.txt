@@ -1,5 +1,26 @@
-__pc__=c2FmZXBlcnNvbkxpc3RfYWRkX2FkZF9zZXNXc3NPUl8xLjAuMC4wX3NhZmVQZXJzb25fc2FmZXBlcnNvbkxpc3R8
-
-id=1006
-&
-__pc__=c2VzV3NzT1JfMS4wLjAuMF9zYWZlUGVyc29uX3NhZmVwZXJzb25MaXN0X3NlbGZ8
+function enableOn(event){
+    var length = ReactAPI.getComponentAPI("SupDataGrid").APIs("WTS_1.0.0_sign_signList_sign_sdg").getSelecteds().length;
+	//如果没有选中提示
+	if(length==0){
+		ReactAPI.showMessage("f", ReactAPI.international.getText("SupDatagrid.button.error"));
+		return false;
+    }
+    var id = ReactAPI.getComponentAPI("SupDataGrid").APIs("WTS_1.0.0_sign_signList_sign_sdg").getSelecteds()[0].id;
+    $.ajax({
+        type : 'PUT',
+        async: false,
+        url : '/msService/WTS/sign/sign/modfiyEnable',
+        data : {
+            'id' : id,
+            'flag' : true
+        },
+        success : function(msg){
+            if(msg.success){
+                ReactAPI.showMessage("s", ReactAPI.international.getText("WTS.message.onSuccess"));
+                ReactAPI.getComponentAPI("SearchPanel").APIs("WTS_1.0.0_sign_signList_sign_sp").updateSearch();
+            }else{
+                ReactAPI.showMessage("f",msg.msg);
+            }
+        }
+    });
+}

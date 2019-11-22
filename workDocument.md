@@ -1,10 +1,13 @@
 # workDocument
 
 # 164 orcl 数据库连接信息
-192.168.95.162
-orcl
+192.168.95.162/orcl
 lw10/supcon
 system/supcon
+
+# 作业数据库
+10.10.90.200/orcl
+WTS_CP/1
 
 # 164 服务器密码
 192.168.95.164

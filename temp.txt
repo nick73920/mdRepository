@@ -1,26 +1,21 @@
-function enableOn(event){
-    var length = ReactAPI.getComponentAPI("SupDataGrid").APIs("WTS_1.0.0_sign_signList_sign_sdg").getSelecteds().length;
-	//如果没有选中提示
-	if(length==0){
-		ReactAPI.showMessage("f", ReactAPI.international.getText("SupDatagrid.button.error"));
-		return false;
-    }
-    var id = ReactAPI.getComponentAPI("SupDataGrid").APIs("WTS_1.0.0_sign_signList_sign_sdg").getSelecteds()[0].id;
-    $.ajax({
-        type : 'PUT',
-        async: false,
-        url : '/msService/WTS/sign/sign/modfiyEnable',
-        data : {
-            'id' : id,
-            'flag' : true
-        },
-        success : function(msg){
-            if(msg.success){
-                ReactAPI.showMessage("s", ReactAPI.international.getText("WTS.message.onSuccess"));
-                ReactAPI.getComponentAPI("SearchPanel").APIs("WTS_1.0.0_sign_signList_sign_sp").updateSearch();
-            }else{
-                ReactAPI.showMessage("f",msg.msg);
-            }
-        }
-    });
-}
+动火作业
+受限空间作业
+盲板抽堵作业
+高处作业
+吊装作业
+临时用电作业
+动士作业
+断路作业
+
+display: block; transform: translate3d(0px, 0px, 0px); width: 88px;
+display: block; transform: translate3d(120px, 0px, 0px); width: 116px;
+display: block; transform: translate3d(268px, 0px, 0px); width: 117px;
+display: block; transform: translate3d(417px, 0px, 0px); width: 89px;
+display: block; transform: translate3d(538px, 0px, 0px); width: 89px;
+display: block; transform: translate3d(659px, 0px, 0px); width: 117px;
+display: block; transform: translate3d(808px, 0px, 0px); width: 88px;
+display: block; transform: translate3d(928px, 0px, 0px); width: 88px;
+
+/msService/WTS/workTicket/workTicket/fireworkEdit?deploymentId=1013&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1
+
+/msService/WTS/workTicket/workTicket/fireworkEdit?deploymentId=1012&entityCode=WTS_1.0.0_workTicket&workPermit=1

@@ -38,3 +38,9 @@ OracleDBConsoleorcl
 
 # idea签名
 https://blog.csdn.net/m0_37089517/article/details/89764197
+
+# oracle数据删除后恢复
+https://www.cnblogs.com/liuyb/p/11189652.html
+
+# 强化学习
+https://www.jianshu.com/p/6436b99dcaef

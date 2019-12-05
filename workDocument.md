@@ -45,3 +45,5 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12100 -jar
 
 # 部门职责
 java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=12100 -jar C:\bap\bap-server\bap-workspace\generate\sesWssORMs\target\sesWssORMs-1.0.0.jar
+
+java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9527 -jar 

@@ -1,0 +1,359 @@
+{
+	"content": "l",
+	"ticketNo": "",
+	"businessKey": "",
+	"applyDept": {
+		"id": 1003,
+		"name": "安全应急组"
+	},
+	"applyStaff": {
+		"code": "ldy",
+		"position.name": "安全组岗位一",
+		"name": "ldy",
+		"id": 1004,
+		"department.id": 1003,
+		"position.id": 1002,
+		"deptname": "安全应急组",
+		"position.department.id": 1003
+	},
+	"ticketType": "WTS_workType/fireWork,WTS_workType/limitSpaceWork",
+	"applyTime": "2019-12-18 16:36:47",
+	"workTicketList": [{
+		"content": "l",
+		"hazidValue": "测试1",
+		"applyStaff": {
+			"code": "ldy",
+			"position.name": "安全组岗位一",
+			"name": "ldy",
+			"id": 1004,
+			"department.id": 1003,
+			"position.id": 1002,
+			"deptname": "安全应急组",
+			"position.department.id": 1003
+		},
+		"applyDept": {
+			"id": 1003,
+			"name": "安全应急组"
+		},
+		"contrStaff": {
+			"code": "csl",
+			"position.name": "开发部岗位一",
+			"name": "柴思林",
+			"id": 1002,
+			"department.id": 1001,
+			"position.id": 1000,
+			"deptname": "开发一部",
+			"position.department.id": 1001
+		},
+		"workDept": {
+			"code": "mobile1",
+			"name": "移动开发部",
+			"id": 1004
+		},
+		"levelOne": {
+			"id": "WTS_levelOne/firstLevel"
+		},
+		"fireWay": "WTS_fireWay/crush,WTS_fireWay/electrodrill",
+		"workType": {
+			"id": "WTS_workType/fireWork"
+		},
+		"ensureType": "",
+		"startTime": "2019-12-18 16:36:15",
+		"endTime": "2019-12-31 16:36:16",
+		"riskSafeTicketList": [],
+		"signTicketList": [],
+		"hazidTicketList": [{
+			"candidateValue": "测试1",
+			"enable": true,
+			"id": null,
+			"refConfig": null,
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"rowIndex": 0
+		}],
+		"signTicket": {
+			"opinion": "同意",
+			"signName": "开票申请",
+			"signTime": "2019-12-18 16:36:50"
+		}
+	}, {
+		"content": "l",
+		"hazidValue": "测试1",
+		"mainMedium": "l",
+		"applyStaff": {
+			"code": "ldy",
+			"position.name": "安全组岗位一",
+			"name": "ldy",
+			"id": 1004,
+			"department.id": 1003,
+			"position.id": 1002,
+			"deptname": "安全应急组",
+			"position.department.id": 1003
+		},
+		"applyDept": {
+			"id": 1003,
+			"name": "安全应急组"
+		},
+		"contrStaff": {
+			"code": "csl",
+			"position.name": "开发部岗位一",
+			"name": "柴思林",
+			"id": 1002,
+			"department.id": 1001,
+			"position.id": 1000,
+			"deptname": "开发一部",
+			"position.department.id": 1001
+		},
+		"workDept": {
+			"code": "mobile1",
+			"name": "移动开发部",
+			"id": 1004
+		},
+		"workType": {
+			"id": "WTS_workType/limitSpaceWork"
+		},
+		"ensureType": "WTS_ensureType/photograph,WTS_ensureType/checkConfirm,WTS_ensureType/inputText",
+		"startTime": "2019-12-18 16:36:38",
+		"endTime": "2019-12-31 16:36:39",
+		"riskSafeTicketList": [{
+			"checkConfirm": null,
+			"content": "对进入受限空间危险性进行分析",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": true,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 0
+		}, {
+			"checkConfirm": true,
+			"content": "所有与受限空间联系的阀门、管线加盲板隔离，列出盲板清单，落实了盲板抽堵负责人",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": null,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 1
+		}, {
+			"checkConfirm": true,
+			"content": "设备经过置换、吹扫、蒸煮",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": null,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 2
+		}, {
+			"checkConfirm": null,
+			"content": "设备打开通风孔进行自然通风，温度适宜人员作业；必要时采用强制通风或佩戴隔离正压防护面具，不得用通氧气或富氧空气的方法补充氧",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": true,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 3
+		}, {
+			"checkConfirm": null,
+			"content": "相关设备进行处理，带搅拌机的设备已切断电源，电源开关处加锁或挂“禁止合闸”标志牌，设专人监护",
+			"id": null,
+			"inputText": true,
+			"location": false,
+			"necessary": true,
+			"photograph": null,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 4
+		}, {
+			"checkConfirm": null,
+			"content": "检查受限空间内部已具备作业条件，作业是（无需要/已采用）防爆工具",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": true,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 5
+		}, {
+			"checkConfirm": true,
+			"content": "检查受限空间进出口通道，无阻碍人员进出的障碍物",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": null,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 6
+		}, {
+			"checkConfirm": null,
+			"content": "分析盛装过可燃有毒液体、气体的受限空间内可燃、有毒有害气体含量",
+			"id": null,
+			"inputText": true,
+			"location": false,
+			"necessary": true,
+			"photograph": null,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 7
+		}, {
+			"checkConfirm": true,
+			"content": "作业人员、监护人员清楚受限空间内存在的危险有害因素，明确作业风险，如内部附件、集渣坑等",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": null,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 8
+		}, {
+			"checkConfirm": true,
+			"content": "消防器材（  ）、救生绳（  ）、救生三脚架（   ）、气防装备（  ）",
+			"id": null,
+			"inputText": null,
+			"location": false,
+			"necessary": true,
+			"photograph": null,
+			"refConfig": true,
+			"safetyType": {
+				"id": "WTS_safetyType/safeMeasure",
+				"value": "安全措施"
+			},
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"safetyType.value_attr": {
+				"readonly": true,
+				"bindEvent": {}
+			},
+			"rowIndex": 9
+		}],
+		"signTicketList": [],
+		"hazidTicketList": [{
+			"candidateValue": "测试1",
+			"enable": true,
+			"id": null,
+			"refConfig": null,
+			"sort": null,
+			"version": 0,
+			"workTicket": null,
+			"needCheck": true,
+			"rowIndex": 0
+		}],
+		"signTicket": {
+			"opinion": "同意",
+			"signName": "开票申请",
+			"signTime": "2019-12-18 16:36:50"
+		}
+	}]
+}

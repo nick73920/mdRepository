@@ -11,9 +11,13 @@ a_11111111
 ludunyue
 a_11111111
 
+# 3.0神道地址
+http://10.30.20.30/zentao/bug-view-278.html
+ludunyue/123456
+
 # bap资料整理
 ftp://192.168.90.8/BAP/5.00/
-账号  bap  
+账号  bap 
 密码  Supcon1304
 
 # 32平台
@@ -38,5 +42,19 @@ zs
 http://192.168.90.76:8080/
 hrl/1
 
+# 张鑫认测试平台
+http://192.168.95.170:8080/
+
 192.168.90.76
 Supcon1304
+
+C:\VxBap\bap-server\BAPCfgTools\configuration
+jdbc:oracle:thin:@192.168.95.162:1521:orcl
+ses3test
+
+# 黄亭平台
+http://192.168.91.201:8080/
+admin/14725836
+10.30.21.50/orcl  alam alam
+
+192.168.90.115:8080

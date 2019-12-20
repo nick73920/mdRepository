@@ -1,10 +1,53 @@
-ticket表缺
-processkey
-deploymentid
-status
-table_no
-tableinfoid
+Object.keys(ReactAPI.getComponentAPI("Label")).filter(item => item!='APIs');
 
-三张子表缺
-tableinfoid
-sort
+
+
+    var inputKeys = Object.keys(ReactAPI.getComponentAPI("Input")).filter(item => item!='APIs');
+    var referenceKeys = Object.keys(ReactAPI.getComponentAPI("Reference")).filter(item => item!='APIs');
+    var systemCodeKeys = Object.keys(ReactAPI.getComponentAPI("SystemCode")).filter(item => item!='APIs');
+    var datePickerKeys = Object.keys(ReactAPI.getComponentAPI("DatePicker")).filter(item => item!='APIs');
+	
+
+
+http://192.168.90.115:8080/msService/WTS/workTicket/workTicket/fireworkEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1
+http://192.168.90.115:8080/msService/WTS/workTicket/workTicket/blockWorkEdit?deploymentId=1041&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfd3pocGxnanxibG9ja1dvcmtXRg__
+
+blockWorkEdit
+
+/msService/WTS/workTicket/workTicket/fireworkEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/fireWork
+/msService/WTS/workTicket/workTicket/limitSpaceWorkEdit?deploymentId=1039&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/limitSpaceWork
+/msService/WTS/workTicket/workTicket/blockWorkEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/blockWork
+/msService/WTS/workTicket/workTicket/heightWorkEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/heightWork
+/msService/WTS/workTicket/workTicket/liftWorkEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/liftWork
+/msService/WTS/workTicket/workTicket/electricityEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/electricityWork
+/msService/WTS/workTicket/workTicket/soilWorkEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/soilWork
+/msService/WTS/workTicket/workTicket/breakWorkEdit?deploymentId=1037&entityCode=WTS_1.0.0_workTicket&__pc__=c3RhcnRfbDR5YmI2d3xmaXJlV29ya1dG&workPermit=1&ticketType=WTS_workType/breakWork
+
+
+0: "WTS_workType/fireWork"
+1: "WTS_workType/limitSpaceWork"
+2: "WTS_workType/blockWork"
+3: "WTS_workType/heightWork"
+4: "WTS_workType/liftWork"
+5: "WTS_workType/electricityWork"
+6: "WTS_workType/soilWork"
+7: "WTS_workType/breakWork"
+
+breakWorkEdit
+
+materAttributeCode=WHP&customConditionKey=materAttributeCode
+
+删除失败，存在依赖：
+已被微服务报警中心引入
+被危险源监控模块引用
+被物联设备监控模块引用
+危险源监控模块-危险源信息实体-关联位号模型-pointId字段
+物联设备监控模块-报警设备实体-报警点模型-alarmPoint字段
+被危险源监控模块-危险源信息实体中:报警点实体-报警点基本信息模型的业务中心关联
+被物联设备监控模块-报警设备实体中:报警点实体-报警点基本信息模型的业务中心关联
+
+pointId
+报警点Id
+
+http://192.168.95.164:8080/msService/SESEAB/eabSection/eabSetion/setionListRef-query
+http://192.168.95.164:8080/msService/SESEAB/eabSection/eabSetion/setionList-query

@@ -44,3 +44,24 @@ https://www.cnblogs.com/liuyb/p/11189652.html
 
 # 强化学习
 https://www.jianshu.com/p/6436b99dcaef
+
+# 导出oracle数据
+https://bbs.csdn.net/topics/390869255
+https://blog.csdn.net/gray_key/article/details/81072345
+
+# sql plus连接数据库
+https://blog.csdn.net/czh500/article/details/89633382
+ORACLE_HOME=D:\oracle\ludunyue\product\11.2.0\dbhome_1
+lw10/supcon@192.168.95.162/orcl
+imp system/supcon file=C:\Users\Administrator\Desktop\DbFile\backup.dmp full=y;
+
+# 杀进程
+
+netstat -ano | findstr 8080
+
+taskkill /pid 8080 /F
+
+
+
+# Oracle死锁
+https://www.cnblogs.com/tianwyam/p/oracle_lock.html

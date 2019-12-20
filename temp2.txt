@@ -1,224 +1,46 @@
-var classId = '_3Rw48ohw';
-var measureGridId = 'WTS_1.0.0_workTicket_fireworkEditdg1574145227435';
-var signGridId = 'WTS_1.0.0_workTicket_fireworkEditdg1574145470743';
-var hazidGridId = 'WTS_1.0.0_workTicket_fireworkEditdg1574680365096';
-
-function onLoad(){
-
-    gethazidValue('WTS_workType/fireWork');
-	var kyeName = "WTS_1.0.0_workTicket_fireworkEditdg1574680365096";
-	$('#cell_1574745664085_580').append('<div style="display:inline-block;width:16px;height:16px;background: url(/greenDill/static/images/icon.817c8715.png) no-repeat 50%;background-position:0 -63px;position: absolute;top: 0;bottom: 0;margin: auto 0;right: 10px;cursor: pointer;z-index: 1;" onclick="openHazidValue('+"'"+kyeName+"'"+')"></div>');
-    //隐藏表头表尾
-    hideHeaderFooter();
-
-
+{
+	"content": "1503",
+	"ticketNo": "",
+	"applyDept": {
+		"id": 1003,
+		"name": "安全应急组"
+	},
+	"applyStaff": {
+		"id": 1004,
+		"name": "ldy"
+	},
+	"ticketType": "WTS_workType/fireWork",
+	"applyTime": "2019-12-14 15:04:00",
+	"businessKey": "1652",
+	"businessType": {
+		"id": "WTS_businessType/hiddenRisk"
+	}
 }
 
-function initFormData(d){
-
-        if(nonNull(d.content)){
-            ReactAPI.getComponentAPI("Input").APIs("workTicket.content").setValue(d.content);
-        }
-        if(nonNull(d.applyStaff)){
-            ReactAPI.getComponentAPI("Reference").APIs("workTicket.applyStaff.name").setValue(d.applyStaff);
-        }
-        if(nonNull(d.applyDept)){
-            ReactAPI.getComponentAPI("Reference").APIs("workTicket.applyDept.name").setValue(d.applyDept);
-        }
-        if(nonNull(d.levelOne)){
-            ReactAPI.getComponentAPI("SystemCode").APIs("workTicket.levelOne").setValue(d.levelOne);
-        }
-        if(nonNull(d.startTime)){
-            ReactAPI.getComponentAPI("DatePicker").APIs("workTicket.startTime").setValue(d.startTime);
-        }
-        if(nonNull(d.endTime)){
-            ReactAPI.getComponentAPI("DatePicker").APIs("workTicket.endTime").setValue(d.endTime);
-        }
-        if(nonNull(d.operationWay)){
-            ReactAPI.getComponentAPI("Input").APIs("workTicket.operationWay").setValue(d.operationWay);
-        }
-        if(nonNull(d.contrStaff)){
-            ReactAPI.getComponentAPI("Reference").APIs("workTicket.contrStaff.name").setValue(d.contrStaff);
-        }
-        if(nonNull(d.hazidValue)){
-            ReactAPI.getComponentAPI("Input").APIs("workTicket.hazidValue").setValue(d.hazidValue);
-        }
-
-
-}
-
-//判断非空
-function nonNull(obj){
-    return !isNull(obj);
-}
-
-//判断空
-function isNull(obj){
-
-    var success = false;
-
-    if(!obj){
-        success = true;
+[
+    {
+        "sectionId":"1",
+        "sectionName":"2",
+        "actionName":null,
+        "actionCatogory":null,
+        "actionAddress":null,
+        "imgIcon":null,
+        "timeConsume":null,
+        "actionDescription":null,
+        "sort":0
     }
-    if(obj === undefined){
-        success = true;
+]
+
+[
+    {
+        "sectionId":1001,
+        "sectionName":"抢险组",
+        "actionName":null,
+        "actionCatogory":null,
+        "actionAddress":null,
+        "imgIcon":null,
+        "timeConsume":null,
+        "actionDescription":null,
+        "sort":0
     }
-    if(obj === ''){
-        success = true;
-    }
-    return success;
-}
-
-function onSave(){
-
-
-
-}
-
-//隐藏表头表尾
-function hideHeaderFooter(){
-
-    var d = ReactAPI.getParamsInRequestUrl();
-    if(d.workPermit !== undefined && d.workPermit === '1'){
-        document.getElementsByClassName(classId)[0].style = 'display:none;';
-        document.getElementsByClassName(classId)[1].style = 'display:none;';
-        document.getElementsByClassName(classId)[7].style = 'display:none;';
-    }
-
-}
-
-//验证表单
-function onValidate(showMessage){
-
-    var d = getFormData();
-
-    var success = true;
-    var errorMsgArray = [];
-    //作业内容
-    if(isNull(d.content)){
-        ReactAPI.getComponentAPI('Input').APIs('workTicket.content').setValidateStyle('error','作业内容不能为空！');
-        errorMsgArray.push('作业内容不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('Input').APIs('workTicket.content').setValidateStyle('success','');
-    }
-
-    //申请人
-    if(isNull(d.applyStaff)){
-        ReactAPI.getComponentAPI('Reference').APIs('workTicket.applyStaff.name').setValidateStyle('error','申请人不能为空！');
-        errorMsgArray.push('申请人不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('Reference').APIs('workTicket.applyStaff.name').setValidateStyle('success','');
-    }
-
-    //申请单位
-    if(isNull(d.applyDept)){
-        ReactAPI.getComponentAPI('Reference').APIs('workTicket.applyDept.name').setValidateStyle('error','申请单位不能为空！');
-        errorMsgArray.push('申请单位不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('Reference').APIs('workTicket.applyDept.name').setValidateStyle('success','');
-    }
-
-    //等级
-    if(isNull(d.levelOne)){
-        ReactAPI.getComponentAPI('SystemCode').APIs('workTicket.levelOne').setValidateStyle('error','等级不能为空！');
-        errorMsgArray.push('等级不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('SystemCode').APIs('workTicket.levelOne').setValidateStyle('success','');
-    }
-
-    //计划开始时间
-    if(isNull(d.startTime)){
-        ReactAPI.getComponentAPI('DatePicker').APIs('workTicket.startTime').setValidateStyle('error','计划开始时间不能为空！');
-        errorMsgArray.push('计划开始时间不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('DatePicker').APIs('workTicket.startTime').setValidateStyle('success','');
-    }
-
-    //计划结束时间
-    if(isNull(d.endTime)){
-        ReactAPI.getComponentAPI('DatePicker').APIs('workTicket.endTime').setValidateStyle('error','计划结束时间不能为空！');
-        errorMsgArray.push('计划结束时间不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('DatePicker').APIs('workTicket.endTime').setValidateStyle('success','');
-    }
-
-    //作业方式
-    if(isNull(d.operationWay)){
-        ReactAPI.getComponentAPI('Input').APIs('workTicket.operationWay').setValidateStyle('error','作业方式不能为空！');
-        errorMsgArray.push('作业方式不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('Input').APIs('workTicket.operationWay').setValidateStyle('success','');
-    }
-
-    //监护人
-    if(isNull(d.contrStaff)){
-        ReactAPI.getComponentAPI('Reference').APIs('workTicket.contrStaff.name').setValidateStyle('error','监护人不能为空！');
-        errorMsgArray.push('监护人不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('Reference').APIs('workTicket.contrStaff.name').setValidateStyle('success','');
-    }
-
-    //危害识别
-    if(isNull(d.hazidValue)){
-        ReactAPI.getComponentAPI('Input').APIs('workTicket.hazidValue').setValidateStyle('error','危害识别不能为空！');
-        errorMsgArray.push('危害识别不能为空！');
-        success = false;
-    }else{
-        ReactAPI.getComponentAPI('Input').APIs('workTicket.hazidValue').setValidateStyle('success','');
-    }
-
-    if(success === false && errorMsgArray.length > 0 && showMessage === true){
-        ReactAPI.showMessage('w',errorMsgArray.join('\n'));
-    }
-
-    var dd = { 'success':success,'msg':errorMsgArray };
-    return dd;
-
-}
-
-//获取表单数据
-function getFormData(){
-
-    var content = ReactAPI.getComponentAPI("Input").APIs("workTicket.content").getValue();
-    var applyStaff = ReactAPI.getComponentAPI("Reference").APIs("workTicket.applyStaff.name").getValue()[0];
-    var applyDept = ReactAPI.getComponentAPI("Reference").APIs("workTicket.applyDept.name").getValue()[0];
-    var levelOne = ReactAPI.getComponentAPI("SystemCode").APIs("workTicket.levelOne").getValue().value;
-    var startTime = ReactAPI.getComponentAPI("DatePicker").APIs("workTicket.startTime").getValue();
-    var endTime = ReactAPI.getComponentAPI("DatePicker").APIs("workTicket.endTime").getValue();
-    var operationWay = ReactAPI.getComponentAPI("Input").APIs("workTicket.operationWay").getValue();
-    var contrStaff = ReactAPI.getComponentAPI("Reference").APIs("workTicket.contrStaff.name").getValue()[0];
-    var hazidValue = ReactAPI.getComponentAPI("Input").APIs("workTicket.hazidValue").getValue();
-    var workType = ReactAPI.getComponentAPI("SystemCode").APIs("workTicket.workType").getValue().value;
-    var ensureType = ReactAPI.getComponentAPI("SystemCode").APIs("workTicket.ensureType").getValue().value.join(',');
-
-    var riskSafeTicketList = ReactAPI.getComponentAPI("SupDataGrid").APIs(measureGridId).getDatagridData();
-    var signTicketList = ReactAPI.getComponentAPI("SupDataGrid").APIs(signGridId).getDatagridData();
-    var hazidTicketList = ReactAPI.getComponentAPI("SupDataGrid").APIs(hazidGridId).getDatagridData();
-
-
-    var d = {
-        'content' : content,
-        'applyStaff' : applyStaff,
-        'applyDept' : applyDept,
-        'levelOne' : levelOne,
-        'startTime' : startTime,
-        'endTime' : endTime,
-        'operationWay' : operationWay,
-        'contrStaff' : contrStaff,
-        'hazidValue' : hazidValue,
-        'workType' : workType,
-        'ensureType' : ensureType,
-        'riskSafeTicketList' : riskSafeTicketList,
-        'signTicketList' : signTicketList,
-        'hazidTicketList' : hazidTicketList
-    };
-    return d;
-}
+]

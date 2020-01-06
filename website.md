@@ -16,7 +16,7 @@ http://10.30.20.30/zentao/bug-view-278.html
 ludunyue/123456
 
 # bap资料整理
-ftp://192.168.90.8/BAP/5.00/
+ftp://192.168.90.8/BAP/5.0.0.0/
 账号  bap 
 密码  Supcon1304
 
@@ -58,6 +58,3 @@ admin/14725836
 10.30.21.50/orcl  alam alam
 
 192.168.90.115:8080
-
-
-

@@ -3,6 +3,7 @@
 # 164 orcl 数据库连接信息
 192.168.95.162/orcl
 lw10/supcon
+admin/0
 system/supcon
 
 bap005/supcon

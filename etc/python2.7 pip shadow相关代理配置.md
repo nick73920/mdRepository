@@ -26,7 +26,7 @@ https://www.cnblogs.com/yangleda/p/8320766.html
 - 下载shadow程序
 
   > pip install shadow
-1. 用apt安装shadowsocks
+2. 用apt安装shadowsocks
 > sudo apt install shadowsocks
 
 

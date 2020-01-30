@@ -14,6 +14,7 @@ https://www.cnblogs.com/yangleda/p/8320766.html
 
   *用官方源速度会慢一点，基本都可以下载到，有些资源可能需要翻墙。*
 
+1. 用python安装shadowsocks
 - 安装python2.7
 
   > sudo apt-get install python
@@ -25,15 +26,16 @@ https://www.cnblogs.com/yangleda/p/8320766.html
 - 下载shadow程序
 
   > pip install shadow
+1. 用apt安装shadowsocks
+> sudo apt install shadowsocks
+
 
 - 新建配置文件
 
-  > sudo nano /etc/shadowsocksr/config.json
-
-  > sudo gedit /etc/shadowsocker/config.json
+  > sudo gedit /etc/shadowsocks/config.json
 
   > {
-  >  "server":"38.100.229.84",
+>  "server":"38.100.229.84",
   >  "server_port":39,
   >  "local_address": "127.0.0.1",
   >  "local_port":1080,
@@ -80,7 +82,7 @@ https://www.cnblogs.com/yangleda/p/8320766.html
 
     proxychains curl www.google.com
 
-  - 代理chrome浏览器(最新的google浏览器有报错不能进行代理，浏览器版本号为75，但是可以代理Firefox浏览器)
+  - 代理chrome浏览器
 
     > proxychains google-chrome
 
